@@ -21,7 +21,7 @@ public class ScoreManager : MonoBehaviour
     public int GetScore() => score;
     public int GetHighScore() => highScore;
 
-    private void UpdateScoreDisplay()
+    protected virtual void UpdateScoreDisplay()
     {
         Debug.Log($"Score: {score}, High Score: {highScore}");
     }
